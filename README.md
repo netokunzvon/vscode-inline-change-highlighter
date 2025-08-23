@@ -17,7 +17,8 @@ Simple, lightweight, and **no Git required**.
 ## 🚀 Installation
 You can install via the **VS Code Marketplace**:
 
-[![Install from Marketplace](https://img.shields.io/badge/Install%20on-VS%20Code%20Marketplace-007ACC?logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=<your-publisher-id>.inline-change-highlighter)
+[![Install from Marketplace](https://img.shields.io/badge/Install%20on-VS%20Code%20Marketplace-007ACC?logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=netokunzvon.inline-change-highlighter)
+
 
 ---
 
@@ -39,7 +40,8 @@ If it saves you time, consider supporting my work ❤️
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://paypal.me/netof01)
 [![Donate with CashApp](https://img.shields.io/badge/Donate-CashApp-brightgreen?logo=cashapp)](https://cash.app/$netokunz)
 
-Your support keeps this project alive and helps me add new features! 🙌
+
+Only 1 usd is a big help! 🙌
 
 ---
 

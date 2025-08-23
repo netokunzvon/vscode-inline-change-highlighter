@@ -1,0 +1,44 @@
+# ---------------------------
+# Node.js dependencies
+# ---------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---------------------------
+# Build outputs
+# ---------------------------
+out/
+dist/
+*.vsix
+
+# ---------------------------
+# TypeScript cache
+# ---------------------------
+*.tsbuildinfo
+
+# ---------------------------
+# Logs and temporary files
+# ---------------------------
+*.log
+*.tmp
+
+# ---------------------------
+# OS-specific files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# IDE-specific configs
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------
+# GitHub metadata you don't want to track
+# ---------------------------
+.github/

@@ -3,17 +3,27 @@
   "displayName": "Inline Change Highlighter",
   "description": "Highlights characters changed since last save. Clears on save. No Git needed.",
   "version": "0.0.1",
-  "publisher": "your-publisher-id",
+  "publisher": "netokunzvon",
   "engines": {
     "vscode": "^1.84.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Visualization"],
   "activationEvents": [
-    "*"
+    "onStartupFinished",
+    "onCommand:inlineChangeHighlighter.toggle",
+    "onCommand:inlineChangeHighlighter.rebaseline",
+    "onCommand:inlineChangeHighlighter.support"
   ],
   "main": "./out/extension.js",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netokunzvon/vscode-inline-change-highlighter.git"
+  },
+  "homepage": "https://github.com/netokunzvon/vscode-inline-change-highlighter",
+  "bugs": {
+    "url": "https://github.com/netokunzvon/vscode-inline-change-highlighter/issues"
+  },
   "contributes": {
     "commands": [
       {
@@ -23,6 +33,10 @@
       {
         "command": "inlineChangeHighlighter.rebaseline",
         "title": "Inline Change Highlighter: Rebaseline Now"
+      },
+      {
+        "command": "inlineChangeHighlighter.support",
+        "title": "Inline Change Highlighter: Support the Project ♥"
       }
     ],
     "configuration": {
@@ -65,6 +79,33 @@
           "type": "boolean",
           "default": true,
           "description": "Highlight whitespace-only edits too."
+        },
+        "inlineChangeHighlighter.donation.enablePrompt": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show an occasional reminder to support the project."
+        },
+        "inlineChangeHighlighter.donation.intervalDays": {
+          "type": "number",
+          "default": 14,
+          "minimum": 1,
+          "description": "Minimum days between donation prompts."
+        },
+        "inlineChangeHighlighter.donation.editThreshold": {
+          "type": "number",
+          "default": 200,
+          "minimum": 1,
+          "description": "Minimum number of edit events between prompts."
+        },
+        "inlineChangeHighlighter.donation.paypalUrl": {
+          "type": "string",
+          "default": "https://paypal.me/netof01",
+          "description": "PayPal donation link."
+        },
+        "inlineChangeHighlighter.donation.cashAppUrl": {
+          "type": "string",
+          "default": "https://cash.app/$netokunz",
+          "description": "Cash App donation link."
         }
       }
     }
@@ -87,13 +128,13 @@
     "diff-match-patch": "^1.0.5"
   },
   "funding": [
-  {
-    "type": "paypal",
-    "url": "https://paypal.me/netof01"
-  },
-  {
-    "type": "cashapp",
-    "url": "https://cash.app/$netokunz"
-  }
-]
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/netof01"
+    },
+    {
+      "type": "custom",
+      "url": "https://cash.app/$netokunz"
+    }
+  ]
 }

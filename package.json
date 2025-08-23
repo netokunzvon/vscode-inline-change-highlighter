@@ -1,0 +1,99 @@
+{
+  "name": "inline-change-highlighter",
+  "displayName": "Inline Change Highlighter",
+  "description": "Highlights characters changed since last save. Clears on save. No Git needed.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-id",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "inlineChangeHighlighter.toggle",
+        "title": "Inline Change Highlighter: Toggle"
+      },
+      {
+        "command": "inlineChangeHighlighter.rebaseline",
+        "title": "Inline Change Highlighter: Rebaseline Now"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Inline Change Highlighter",
+      "properties": {
+        "inlineChangeHighlighter.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable inline change highlighting."
+        },
+        "inlineChangeHighlighter.color": {
+          "type": "string",
+          "default": "rgba(255,215,0,0.35)",
+          "description": "Background color for inserted/changed characters (CSS color)."
+        },
+        "inlineChangeHighlighter.border": {
+          "type": "string",
+          "default": "1px solid rgba(255,215,0,0.7)",
+          "description": "Optional border CSS for changed text."
+        },
+        "inlineChangeHighlighter.debounceMs": {
+          "type": "number",
+          "default": 200,
+          "minimum": 0,
+          "description": "Debounce time (ms) before recomputing diffs."
+        },
+        "inlineChangeHighlighter.maxFileSizeKb": {
+          "type": "number",
+          "default": 1024,
+          "minimum": 1,
+          "description": "Skip highlighting for files larger than this size (KB)."
+        },
+        "inlineChangeHighlighter.languages": {
+          "type": "array",
+          "default": [],
+          "description": "If non-empty, only run on these language IDs (e.g. ['python','javascript'])."
+        },
+        "inlineChangeHighlighter.includeWhitespace": {
+          "type": "boolean",
+          "default": true,
+          "description": "Highlight whitespace-only edits too."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/diff-match-patch": "^1.0.36",
+    "@types/node": "^24.3.0",
+    "@types/vscode": "^1.84.0",
+    "typescript": "^5.4.0",
+    "vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.5"
+  },
+  "funding": [
+  {
+    "type": "paypal",
+    "url": "https://paypal.me/netof01"
+  },
+  {
+    "type": "cashapp",
+    "url": "https://cash.app/$netokunz"
+  }
+]
+}

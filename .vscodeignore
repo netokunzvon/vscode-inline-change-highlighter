@@ -1,0 +1,7 @@
+**/.vscode
+**/.git
+**/.gitignore
+**/vscode-extension-dev
+**/*.map
+**/src/**
+**/node_modules/**/.bin/**

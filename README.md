@@ -61,7 +61,7 @@ Only 1 usd is a big help! 🙌
 
 ## 🛠 Contributing
 PRs and feature requests are welcome!  
-Open issues on [GitHub](https://github.com/<your-username>/vscode-inline-change-highlighter).
+Open issues on [GitHub](https://github.com/netokunzvon/vscode-inline-change-highlighter).
 
 ---
 

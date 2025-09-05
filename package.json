@@ -2,7 +2,7 @@
   "name": "inline-change-highlighter",
   "displayName": "Inline Change Highlighter",
   "description": "Highlights characters changed since last save. Clears on save. No Git needed.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "netokunzvon",
   "engines": {
     "vscode": "^1.84.0"
